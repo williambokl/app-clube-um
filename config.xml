@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.bluestream.radiosideral" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Rádio Sideral FM</name>
+    <description>
+        Aplicativo da Rádio Sideral FM
+    </description>
+    <author email="william@klavsystems.com" href="http://klavsystems.com.br/">
+        KL AV Systems 2018
+    </author>
+    <icon src="www/img/icons/estrela.png" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*://*youtube.com" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="nl.kingsquare.cordova.background-audio" spec="^1.0.1" />
+    <plugin name="cordova-plugin-device" spec="^2.0.2" />
+    <plugin name="cordova-plugin-advanced-http" spec="*" />
+    <platform name="android">
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="StatusBarBackgroundColor" value="#152e54" />
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <preference name="DisallowOverscroll" value="false" />
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <engine name="ios" spec="~4.5.5" />
+</widget>
