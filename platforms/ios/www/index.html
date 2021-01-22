@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+<!--    Arquivos do Corodova-->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        
+<!--    Arquivos do materialize-->
+        <link rel="stylesheet" type="text/css" href="css/material-icons.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome.min.css">
+        
+<!--    Arquivos do código-->
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <title>Aplicativo K10</title>
+    
+    </head> 
+    <body>
+        
+<!--    Div que engloba todo o código-->
+        <div class="row">
+            
+<!--        Elemento que aparece na tela inicial para ocultar o carregamento do materialize-->
+            <div class="openApp" id="openAppp"></div>
+            
+<!--        Modal que é chamada quando audio esta carregando-->
+            <div id="modal1" class="modal">
+                <div class="modal-content col s3">
+                    <div class="preloader-wrapper small active">
+                        <div class="spinner-layer spinner-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h5>Carregando</h5>
+            </div>
+            
+<!--        Menu de navegação do bottom-->
+            <div class="menu col s12">
+                <nav class="nav-extended">
+                    <div class="nav-content">
+                        <ul class="tabs z-depth-3 primary-color">
+                            <li class="tab"><a href="#tela-radio" class="waves-effect waves-light"><i class="material-icons white-text">radio</i></a></li>
+                            <li class="tab"><a href="#tela-chat" class="waves-effect waves-light"><i class="material-icons white-text">chat</i></a></li>
+                            <li class="tab"><a href="#tela-info" class="waves-effect waves-light"><i class="material-icons white-text">info</i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    
+<!--        Tela de rádio-->
+            <div id="tela-radio" class="col s12">
+                <nav>
+                    <div class="nav-wrapper primary-color">
+                        <h4 class="center">Rádio</h4>
+                    </div>
+                </nav>
+                <div id="siri-container" class="secondary-color"></div>
+                <div class="center btn-radio">
+                    <a class="btn-floating waves-effect waves-light btn-large primary-color" href="#" id="controle-radio">
+                        <i class="material-icons" id="icone-radio">&#xe037;</i>
+                    </a>
+                </div>
+                <div class="center col s12 info-radio">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+            </div>
+        
+<!--        Tela de chat-->
+            <div id="tela-chat" class="col s12">
+                <nav>
+                    <div class="nav-wrapper primary-color">
+                        <h4 class="center">Recados</h4>
+                    </div>
+                </nav>
+                <div class="center info-chat">
+                    <h5 class="grey-text">Envie sua Mensagem</h5>
+                    <div class="row">
+                        <form class="col s12 formChat">
+                            <div class="row">
+                                <div class="input-field col s10 grey-text">
+                                    <i class="material-icons prefix">&#xe853;</i>
+                                    <input id="nome" type="text" class="validade">
+                                    <label for="icon_prefix">Seu nome</label>
+                                </div>
+                                <div class="input-field col s10 grey-text">
+                                    <i class="material-icons prefix">chat</i>
+                                    <input id="mensagem" type="text" class="validade">
+                                    <label for="icon_chat">Sua mensagem</label>
+                                </div>
+                                <button class="btn waves-effect waves-light primary-color" type="submit" name="action" id="btnEnviar">Enviar
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+<!--        Tela de informações-->
+            <div id="tela-info" class="col s12">
+                <nav>
+                    <div class="nav-wrapper primary-color">
+                        <h4 class="center">Informações</h4>
+                    </div>
+                </nav>
+                <div class="center info-info">
+                    <img src="img/logo.png" alt="Logo">
+                    <ul class="col s12">
+                        <li class="col s3">
+                            <a class="btn-floating waves-effect waves-light btn-large primary-color info-telefone">
+                                <i class="material-icons">phone</i>
+                            </a>
+                        </li>
+                        <li class="col s3">
+                            <a class="btn-floating waves-effect waves-light btn-large primary-color info-email">
+                                <i class="material-icons">email</i>
+                            </a>
+                        </li>
+                        <li class="col s3">
+                            <a class="btn-floating waves-effect waves-light btn-large primary-color info-site">
+                                <i class="material-icons">public</i>
+                            </a>
+                        </li>
+                        <li class="col s3">
+                            <a class="btn-floating waves-effect waves-light btn-large primary-color" id="share">
+                                <i class="material-icons">share</i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="col s12">
+                        
+                        <li class="col s4">
+                            <a class="btn-floating waves-effect waves-light btn-large primary-color info-facebook">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+<!--
+                        <li class="col s4">
+                            <a class="btn-floating waves-effect waves-light btn-large primary-color info-instagram">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+-->
+                        <li class="col s4">
+                            <a class="btn-floating waves-effect waves-light btn-large primary-color info-twitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="col s4">
+                            <a class="btn-floating waves-effect waves-light btn-large primary-color info-whatsapp">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <p class="grey-text">© 1989-2018 klavsystems.com.br <br> Todos os direitos reservados.</p>
+                    </ul>
+                </div>
+            </div>
+            
+<!--    Div que engloba todo o código-->
+        </div>
+        
+<!--    Material cordova-->
+        <script src="cordova.js"></script>
+        
+<!--    Arquivos do Jquery-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        
+<!--    Arquivos do materialize-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        
+<!--    Arquivos do código-->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/siriwave.js"></script>
+        <script type="text/javascript" src="js/siri.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/radio.js"></script>
+        <script type="text/javascript" src="js/recado.js"></script>
+        <script type="text/javascript" src="js/infos.js"></script>
+        <script type="text/javascript" src="js/check-internet.js"></script>
+
+    </body>
+</html>

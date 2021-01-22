@@ -1,0 +1,45 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    },
+    "nl.kingsquare.cordova.background-audio": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "Cristian.KL.clubeUm"
+    }
+  }
+}

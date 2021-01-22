@@ -1,0 +1,79 @@
+{
+  "_from": "git+https://github.com/apache/cordova-plugin-media.git#79f6232",
+  "_id": "cordova-plugin-media@2.3.0",
+  "_inBundle": false,
+  "_location": "/cordova-plugin-media",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/apache/cordova-plugin-media.git#79f6232",
+    "rawSpec": "git+https://github.com/apache/cordova-plugin-media.git#79f6232",
+    "saveSpec": "git+https://github.com/apache/cordova-plugin-media.git#79f6232",
+    "fetchSpec": "https://github.com/apache/cordova-plugin-media.git",
+    "gitCommittish": "79f6232"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/apache/cordova-plugin-media.git#79f623264eae0e6813a2147533dd389eda14f455",
+  "_spec": "git+https://github.com/apache/cordova-plugin-media.git#79f6232",
+  "_where": "/Users/admin/Desktop/aplicativos-kl/aplicativo-k10",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-media/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-media",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows",
+      "tizen"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Media Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-media#readme",
+  "keywords": [
+    "cordova",
+    "media",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-tizen"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-media",
+  "peerDependencies": {
+    "cordova-plugin-file": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-media.git"
+  },
+  "scripts": {
+    "jshint": "jshint www && jshint src && jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "2.3.0"
+}
